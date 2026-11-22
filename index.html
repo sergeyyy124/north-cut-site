@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH CUT — Мужской барбершоп</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: #111111;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid #262626;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #d4a359;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #d4a359;
+            color: #111111;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #e3b46b;
+            transform: translateY(-2px);
+        }
+        .btn-small {
+            padding: 10px 18px;
+            font-size: 14px;
+        }
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .hero p {
+            color: #a3a3a3;
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        section {
+            padding: 50px 0;
+            border-top: 1px solid #262626;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 28px;
+            color: #d4a359;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: #a3a3a3;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #d4a359;
+        }
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666666;
+            font-size: 14px;
+            border-top: 1px solid #262626;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">NORTH CUT</div>
+            <!-- ЗАМЕНИ ССЫЛКУ НИЖЕ НА ССЫЛКУ ТВОЕГО БОТА -->
+            <a href="https://t.me/northcut_barber_demo_bot" target="_blank" class="btn btn-small">Записаться в Telegram</a>
+        </header>
+
+        <div class="hero">
+            <h1>Точные мужские стрижки<br>без лишних слов</h1>
+            <p>Классика, фейд, оформление бороды и королевское бритьё. Выбери мастера и свободное время за 30 секунд через нашего Telegram-бота.</p>
+            <!-- ЗАМЕНИ ССЫЛКУ НИЖЕ НА ССЫЛКУ ТВОЕГО БОТА -->
+            <a href="https://t.me/northcut_barber_demo_bot" target="_blank" class="btn">Записаться онлайн в Telegram</a>
+        </div>
+
+        <section>
+            <h2>Услуги и цены</h2>
+            <div class="services">
+                <div class="card">
+                    <div>
+                        <h3>Мужская стрижка</h3>
+                        <p>Мытьё головы, стрижка машинкой и ножницами, укладка премиум-стайлингом.</p>
+                    </div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Стрижка + Борода</h3>
+                        <p>Комплексный уход: идеальный контур бороды, распаривание и стрижка.</p>
+                    </div>
+                    <div class="price">2 700 ₽</div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Моделирование бороды</h3>
+                        <p>Придание формы, окантовка опасной бритвой, масло и бальзам.</p>
+                    </div>
+                    <div class="price">1 200 ₽</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Где мы находимся</h2>
+            <div class="contacts">
+                <div>
+                    <p><strong>Адрес:</strong> ул. Северная, д. 14 (вход со двора)</p>
+                    <p><strong>Режим работы:</strong> Ежедневно с 10:00 до 22:00</p>
+                    <p><strong>Телефон:</strong> +7 (999) 000-00-00</p>
+                </div>
+                <!-- ЗАМЕНИ ССЫЛКУ НИЖЕ НА ССЫЛКУ ТВОЕГО БОТА -->
+                <a href="https://t.me/northcut_barber_demo_bot" target="_blank" class="btn">Открыть бота для записи</a>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 NORTH CUT Barbershop. Демо-проект для портфолио.
+        </footer>
+    </div>
+
+</body>
+</html>
